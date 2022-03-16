@@ -7,6 +7,9 @@ metadata:
     description: |
       Generates provenance for the distroless repo
 spec:
+  timeouts:
+    pipeline: 2h
+    tasks: 2h
   params:
   - name: PROJECT_ID
     type: string
